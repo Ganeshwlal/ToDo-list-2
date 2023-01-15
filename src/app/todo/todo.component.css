@@ -1,0 +1,101 @@
+.body{
+    /* background-color: darkblue; */
+    background: linear-gradient(rgb(193, 193, 239), rgb(241, 202, 130),rgb(244, 117, 117));
+    /* height: 1000px; */
+}
+.todo{
+    display: flex;
+    padding: 10px 5px;
+    /* background-color: #fff; */
+    border-bottom: 5px solid rgb(250, 160, 160);
+}
+
+/* .todo:nth-child(even){
+    background-color: #eee;
+} */
+
+.todo:last-of-type{
+    border-bottom: 0;
+}
+
+.todo .id{
+    /* flex: 1 1 250px; */
+    padding-top: 10px;
+    font-weight: bolder;
+    color: azure;
+    text-align: center;
+    width: 100px;
+    border: 2px solid black;
+    background-color: darkgreen;
+    border-radius: 20px;
+}
+
+.todo .content{
+    /* flex:1 1 100%; */
+    width: 500px;
+    background-color: rgb(247, 247, 247);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.todo .delete{
+
+    margin-left: 200px;
+    background-color: crimson;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: bisque;
+    /* font-weight: bolder; */
+   
+}
+.todos{
+    padding: 20px 300px;
+}
+.todos1{
+    padding: 20px 170px;
+}
+.todo.done .content{
+    text-decoration: line-through;
+    color: rgba(72, 0, 255, 0.705);
+	text-decoration-color: rgb(0, 0, 0);
+}
+
+.todo-input{
+    border-radius: 15px;
+    height: 55px;
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    appearance: none;
+    border: none;
+    background-color: #f3f3f3;
+    margin-top: 15px;
+    font-size: 20px;
+    outline: none;
+    
+}
+  
+.todo-submit{
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #0c7ceb;
+    color: #fff;
+    margin: 15px auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
